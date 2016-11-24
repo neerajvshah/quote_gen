@@ -1,0 +1,28 @@
+body{
+  background-color:#252120;
+  top:400px;
+}
+
+#main_row{
+  padding:  200px 0px 0px 0px;
+  //height: 400px;
+}
+
+#quote_wrapper{
+  width: 50%;
+  margin: 0 auto;
+  //text-align:center;
+}
+
+#buttons{
+  width:25%;
+	margin: 0 auto;
+}
+
+blockquote{
+  border-left: none;
+}
+
+blockquote > p{
+  color:#91C749;
+}
