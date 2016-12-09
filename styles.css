@@ -14,9 +14,16 @@ body{
   //text-align:center;
 }
 
-#buttons{
-  width:25%;
+#quote_text{
+  font-size: 40px;
+}
+
+#generate{
+  width:50%;
 	margin: 0 auto;
+  display: block;
+  background-color: #342e2d;
+  color: #597731;
 }
 
 blockquote{
