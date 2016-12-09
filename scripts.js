@@ -10,7 +10,10 @@ function getQuoteSetText(){
   $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function (data){
 	console.log(data["quoteText"]);
 	console.log(data["quoteAuthor"]);
-    $("#quote_text").text(data["quoteText"]);
-    $("#quote_author").text(data["quoteAuthor"]);
+  $("#quote_text").text(data["quoteText"]);
+  $("#quote_author").text(data["quoteAuthor"]);
+  var encoded = encodeURI(data["quoteText"]);
+  $("#tweet").attr("href", "https://twitter.com/intent/tweet?text=" + encoded);
+  console.log($("#tweet").attr("href"));
   });	
 }
